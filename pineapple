@@ -655,7 +655,7 @@ local silentbuffer = buffer.create(2)
 buffer.writeu8(silentbuffer,0,65)
 buffer.writeu8(silentbuffer,1,1)
 
-task.wait(10)
+task.wait(60)
 game.ReplicatedStorage.AdminPanel:FireServer()
 
 local gethitbuffer=setmetatable({},{__index=function(s,i)
